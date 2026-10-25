@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Participa en la Carrera Solidaria Manos Unidas en Canalete, Córdoba. Corre por una causa, transforma vidas y ayuda a quienes más lo necesitan.">
+  <meta name="theme-color" content="#123d35">
+  <title>Manos Unidas | carrera Solidaria</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <p>💚 Cada paso cuenta. Cada aporte transforma vidas.</p>
+    <a href="https://wa.me/573045788735" target="_blank" rel="noopener noreferrer">
+      <span aria-hidden="true">✆</span> Contáctanos
+    </a>
+  </div>
+
+  <header class="header">
+    <a href="#inicio" class="brand" aria-label="Manos Unidas Fundación Solidaria, inicio">
+  <span class="brand-icon" aria-hidden="true">🤝</span>
+  <span>
+    MANOS <strong>UNIDAS</strong>
+    <small>FUNDACIÓN SOLIDARIA</small>
+  </span>
+</a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+      ☰
+    </button>
+
+    <nav class="nav" id="navMenu" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#fundacion">La fundación</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#recorrido">Recorrido</a>
+      <a href="#patrocinadores">Patrocinadores</a>
+      <a href="#inscripcion" class="nav-button">Inscríbete</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow">UNA CARRERA CON PROPÓSITO</span>
+
+        <h1>Corre por una causa.<br>
+          <span>Transforma vidas.</span>
+        </h1>
+
+        <p class="hero-description">
+          Únete a nuestra carrera solidaria y convierte cada kilómetro
+          en una oportunidad para ayudar a quienes más lo necesitan.
+        </p>
+
+        <div class="event-details">
+          <div class="event-detail">
+            <span class="detail-icon" aria-hidden="true">📅</span>
+            <div>
+              <small>FECHA DEL EVENTO</small>
+              <strong>20 de junio de 2027</strong>
+            </div>
+          </div>
+
+          <div class="event-detail">
+            <span class="detail-icon" aria-hidden="true">📍</span>
+            <div>
+              <small>LUGAR</small>
+              <strong>Canalete, Córdoba</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#inscripcion" class="btn btn-primary">Inscríbete ahora ↗</a>
+          <a href="#fundacion" class="btn btn-outline">Conoce nuestra causa</a>
+        </div>
+
+        <div class="countdown-card">
+          <p>FALTAN PARA LA CARRERA</p>
+          <div class="countdown" aria-label="Cuenta regresiva para la carrera">
+            <div><strong id="days">000</strong><span>DÍAS</span></div>
+            <div><strong id="hours">00</strong><span>HORAS</span></div>
+            <div><strong id="minutes">00</strong><span>MINUTOS</span></div>
+            <div><strong id="seconds">00</strong><span>SEGUNDOS</span></div>
+          </div>
+          <p id="countdownMessage" class="countdown-message" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="hero-badge">
+        <span aria-hidden="true">💚</span>
+        <strong>Tu participación</strong>
+        <small>puede cambiar una vida</small>
+      </div>
+    </section>
+
+    <!-- CIFRAS -->
+    <section class="impact-strip" aria-label="Objetivos de la carrera">
+      <div class="impact-item">
+        <strong>1</strong>
+        <span>Gran causa</span>
+      </div>
+      <div class="impact-item">
+        <strong>3</strong>
+        <span>Categorías</span>
+      </div>
+      <div class="impact-item">
+        <strong>100%</strong>
+        <span>Solidaridad</span>
+      </div>
+      <div class="impact-item">
+        <strong>∞</strong>
+        <span>Motivos para ayudar</span>
+      </div>
+    </section>
+
+    <!-- FUNDACIÓN -->
+    <section class="section about-section" id="fundacion">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1000&q=85"
+          alt="Personas colaborando en una actividad comunitaria solidaria"
+          loading="lazy">
+        <div class="image-note">
+          <span aria-hidden="true">💚</span>
+          <p><strong>Unidos somos más fuertes</strong>
+            <small>La solidaridad empieza contigo.</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-tag">QUIÉNES SOMOS</span>
+        <h2>Pequeñas acciones,<br><span>grandes cambios.</span></h2>
+
+        <p>
+          La Fundación Manos Unidas trabaja por el bienestar de las
+          comunidades, promoviendo la solidaridad, la inclusión y las
+          oportunidades para las personas que más lo necesitan.
+        </p>
+
+        <p>
+          Nuestra carrera solidaria reúne a familias, deportistas,
+          empresas y voluntarios para convertir la actividad física
+          en una oportunidad de contribuir al bienestar colectivo.
+        </p>
+
+        <div class="mission-grid">
+          <article class="mission-card">
+            <span aria-hidden="true">🎯</span>
+            <h3>Nuestra misión</h3>
+            <p>Promover acciones solidarias que mejoren la calidad de vida de las comunidades vulnerables.</p>
+          </article>
+
+          <article class="mission-card">
+            <span aria-hidden="true">🌎</span>
+            <h3>Nuestra visión</h3>
+            <p>Construir comunidades más justas, participativas y solidarias.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="projects-section" id="proyectos">
+      <div class="section-heading">
+        <span class="section-tag">NUESTRO COMPROMISO</span>
+        <h2>Proyectos que dejan huella</h2>
+        <p>Trabajamos para que la solidaridad se convierta en oportunidades reales.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- EDUCACIÓN PARA TODOS -->
+        <article class="project-card">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=85"
+              alt="Niños aprendiendo en un salón de clases"
+              loading="lazy">
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-content">
+            <span class="project-label">OPORTUNIDADES DE APRENDIZAJE</span>
+            <h3>Educación para todos</h3>
+            <p>Apoyo educativo y recursos para niños y jóvenes de comunidades vulnerables, porque aprender abre nuevas oportunidades.</p>
+          </div>
+        </article>
+
+        <!-- APOYO ALIMENTARIO -->
+        <article class="project-card">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=900&q=85"
+              alt="Voluntarios colaborando en una iniciativa de ayuda"
+              loading="lazy">
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-content">
+            <span class="project-label">SOLIDARIDAD Y ALIMENTACIÓN</span>
+            <h3>Apoyo alimentario</h3>
+            <p>Acciones solidarias que buscan contribuir a la alimentación de familias que necesitan acompañamiento y apoyo.</p>
+          </div>
+        </article>
+
+        <!-- BIENESTAR COMUNITARIO -->
+        <article class="project-card">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=85"
+              alt="Personas participando en una actividad de colaboración comunitaria"
+              loading="lazy">
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-content">
+            <span class="project-label">UNIÓN Y PARTICIPACIÓN</span>
+            <h3>Bienestar comunitario</h3>
+            <p>Iniciativas que fomentan la inclusión, la participación ciudadana y la colaboración para construir comunidades más fuertes.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="project-disclaimer">
+        Estas categorías representan las líneas de trabajo propuestas
+        para el proyecto académico de la Fundación Manos Unidas.
+      </p>
+    </section>
+
+      <p class="project-disclaimer">
+        Las iniciativas descritas representan las líneas de trabajo propuestas
+        para el proyecto académico de la fundación.
+      </p>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="section categories-section" id="categorias">
+      <div class="section-heading">
+        <span class="section-tag">ENCUENTRA TU RETO</span>
+        <h2>Una carrera para cada persona</h2>
+        <p>Elige tu distancia, prepara tus tenis y corre por una buena causa.</p>
+      </div>
+
+      <div class="categories-grid">
+        <article class="category-card">
+          <div class="category-number">01</div>
+          <div class="category-icon" aria-hidden="true">🏃</div>
+          <span class="category-label">RETO INICIAL</span>
+          <h3>Carrera 5K</h3>
+          <p>Una excelente opción para quienes quieren comenzar a correr y ayudar.</p>
+          <ul>
+            <li>Distancia: 5 kilómetros</li>
+            <li>Edad mínima: 12 años</li>
+            <li>Ritmo libre y espíritu solidario</li>
+          </ul>
+          <a href="#inscripcion" class="btn btn-dark choose-category" data-category="5 km">Elegir 5K ↗</a>
+        </article>
+
+        <article class="category-card category-featured">
+          <div class="featured-label">RETO DEPORTIVO</div>
+          <div class="category-number">02</div>
+          <div class="category-icon" aria-hidden="true">🏅</div>
+          <span class="category-label">SUPERA TUS LÍMITES</span>
+          <h3>Carrera 10K</h3>
+          <p>Para corredores que buscan un desafío mayor mientras apoyan la causa.</p>
+          <ul>
+            <li>Distancia: 10 kilómetros</li>
+            <li>Edad mínima: 16 años</li>
+            <li>Ideal para corredores entrenados</li>
+          </ul>
+          <a href="#inscripcion" class="btn btn-primary choose-category" data-category="10 km">Elegir 10K ↗</a>
+        </article>
+
+        <article class="category-card">
+          <div class="category-number">03</div>
+          <div class="category-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
+          <span class="category-label">TODOS JUNTOS</span>
+          <h3>Carrera familiar</h3>
+          <p>Comparte una mañana especial de movimiento, alegría y solidaridad.</p>
+          <ul>
+            <li>Recorrido recreativo</li>
+            <li>Participación de todas las edades</li>
+            <li>Menores acompañados por un adulto</li>
+          </ul>
+          <a href="#inscripcion" class="btn btn-dark choose-category" data-category="Familiar">Elegir familiar ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- RECORRIDO -->
+    <section class="route-section" id="recorrido">
+      <div class="route-content">
+        <span class="section-tag">PREPARA TUS TENIS</span>
+        <h2>Un recorrido lleno de esperanza</h2>
+        <p>
+          Nos encontraremos en Canalete, Córdoba, para compartir una jornada
+          de deporte, unión y compromiso social.
+        </p>
+
+        <div class="route-point">
+          <span aria-hidden="true">📍</span>
+          <div>
+            <strong>Punto de encuentro</strong>
+            <p>Zona central de Canalete, Córdoba.</p>
+          </div>
+        </div>
+
+        <div class="route-point">
+          <span aria-hidden="true">🏁</span>
+          <div>
+            <strong>Salida y llegada</strong>
+            <p>El punto exacto se anunciará antes del evento.</p>
+          </div>
+        </div>
+
+        <div class="route-point">
+          <span aria-hidden="true">💧</span>
+          <div>
+            <strong>Recomendaciones</strong>
+            <p>Lleva ropa cómoda, hidratación y llega con anticipación.</p>
+          </div>
+        </div>
+
+        <a href="#inscripcion" class="btn btn-primary">Quiero participar ↗</a>
+      </div>
+
+      <div class="route-visual">
+        <img
+          src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1000&q=85"
+          alt="Participantes corriendo en una carrera deportiva"
+          loading="lazy">
+        <div class="route-overlay">
+          <span>📍</span>
+          <div>
+            <strong>Canalete, Córdoba</strong>
+            <small>Colombia · Carrera solidaria</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSCRIPCIÓN -->
+    <section class="registration-section" id="inscripcion">
+      <div class="section-heading">
+        <span class="section-tag">DA EL PRIMER PASO</span>
+        <h2>Inscríbete a la carrera</h2>
+        <p>Completa tus datos para registrar tu participación en el evento.</p>
+      </div>
+
+      <div class="registration-layout">
+        <aside class="registration-info">
+          <span class="info-icon" aria-hidden="true">💚</span>
+          <h3>Tu participación<br>hace la diferencia.</h3>
+          <p>
+            Cada persona que se suma fortalece el mensaje de unión y
+            solidaridad. ¡Invita a tu familia y amigos!
+          </p>
+
+          <div class="info-divider"></div>
+
+          <div class="info-line">
+            <span aria-hidden="true">📅</span>
+            <div><small>FECHA</small><strong>20 de junio de 2027</strong></div>
+          </div>
+
+          <div class="info-line">
+            <span aria-hidden="true">📍</span>
+            <div><small>LUGAR</small><strong>Canalete, Córdoba</strong></div>
+          </div>
+
+          <div class="info-line">
+            <span aria-hidden="true">📲</span>
+            <div>
+              <small>INFORMACIÓN</small>
+              <strong>304 578 8735</strong>
+            </div>
+          </div>
+
+          <a href="https://wa.me/573045788735" target="_blank"
+             rel="noopener noreferrer" class="whatsapp-link">
+            Consultar por WhatsApp ↗
+          </a>
+        </aside>
+
+        <div class="form-panel">
+          <form id="registrationForm" novalidate>
+            <div class="form-heading">
+              <h3>Formulario de inscripción</h3>
+              <p>Los campos marcados con * son obligatorios.</p>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="fullName">Nombre completo *</label>
+                <input type="text" id="fullName" name="fullName"
+                  autocomplete="name" placeholder="Escribe tus nombres y apellidos"
+                  required minlength="5" maxlength="100">
+                <small class="error-message" id="fullNameError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="documentId">Documento de identidad *</label>
+                <input type="text" id="documentId" name="documentId"
+                  inputmode="numeric" autocomplete="off"
+                  placeholder="Número de documento"
+                  required minlength="5" maxlength="15">
+                <small class="error-message" id="documentIdError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="birthDate">Fecha de nacimiento *</label>
+                <input type="date" id="birthDate" name="birthDate"
+                  autocomplete="bday" required>
+                <small class="error-message" id="birthDateError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email"
+                  autocomplete="email" placeholder="ejemplo@correo.com"
+                  required maxlength="120">
+                <small class="error-message" id="emailError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Teléfono celular *</label>
+                <input type="tel" id="phone" name="phone"
+                  inputmode="numeric" autocomplete="tel"
+                  placeholder="Ej. 3001234567"
+                  required maxlength="10">
+                <small class="error-message" id="phoneError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="category">Categoría *</label>
+                <select id="category" name="category" required>
+                  <option value="">Selecciona una categoría</option>
+                  <option value="5 km">Carrera 5K (mínimo 12 años)</option>
+                  <option value="10 km">Carrera 10K (mínimo 16 años)</option>
+                  <option value="Familiar">Carrera familiar (todas las edades)</option>
+                </select>
+                <small class="error-message" id="categoryError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="shirtSize">Talla de camiseta *</label>
+                <select id="shirtSize" name="shirtSize" required>
+                  <option value="">Selecciona tu talla</option>
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                </select>
+                <small class="error-message" id="shirtSizeError"></small>
+              </div>
+
+              <div class="form-group full-width" id="guardianGroup" hidden>
+                <label for="guardian">Nombre del padre, madre o acudiente *</label>
+                <input type="text" id="guardian" name="guardian"
+                  placeholder="Nombre completo del adulto responsable"
+                  maxlength="100">
+                <small class="error-message" id="guardianError"></small>
+              </div>
+
+              <div class="form-group full-width consent-group">
+                <label class="checkbox-label" for="consent">
+                  <input type="checkbox" id="consent" name="consent" required>
+                  <span>Confirmo que los datos son correctos y acepto ser contactado
+                    para recibir información relacionada con la carrera. *</span>
+                </label>
+                <small class="error-message" id="consentError"></small>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-button">
+              Confirmar inscripción <span aria-hidden="true">↗</span>
+            </button>
+
+            <p class="privacy-note">
+              🔒 Tus datos deben tratarse de forma responsable y utilizarse
+              únicamente para la gestión de la inscripción.
+            </p>
+
+            <div class="success-message" id="successMessage"
+              role="status" aria-live="polite" hidden>
+              <span aria-hidden="true">✓</span>
+              <div>
+                <strong>¡Formulario validado correctamente!</strong>
+                <p id="successDetails"></p>
+                <small>Este sitio es una demostración académica:
+                  tus datos no se han enviado a un servidor ni constituyen
+                  una inscripción oficial.</small>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALIADOS SOLIDARIOS -->
+<section class="sponsors-section" id="patrocinadores">
+  <div class="section-heading">
+    <span class="section-tag">JUNTOS HACEMOS LA DIFERENCIA</span>
+    <h2>Aliados que hacen posible la causa</h2>
+    <p>
+      Cada aporte, cada idea y cada mano amiga pueden contribuir
+      a construir una comunidad más solidaria.
+    </p>
+  </div>
+
+  <div class="sponsors-grid">
+
+    <article class="sponsor-logo">
+      <span class="sponsor-icon" aria-hidden="true">🏢</span>
+      <strong>Empresas solidarias</strong>
+      <small>
+        Aportes y recursos para apoyar las iniciativas sociales.
+      </small>
+    </article>
+
+    <article class="sponsor-logo">
+      <span class="sponsor-icon" aria-hidden="true">🎓</span>
+      <strong>Instituciones educativas</strong>
+      <small>
+        Apoyo a las oportunidades de aprendizaje de niños y jóvenes.
+      </small>
+    </article>
+
+    <article class="sponsor-logo">
+      <span class="sponsor-icon" aria-hidden="true">🤝</span>
+      <strong>Organizaciones sociales</strong>
+      <small>
+        Cooperación para desarrollar iniciativas comunitarias.
+      </small>
+    </article>
+
+    <article class="sponsor-logo">
+      <span class="sponsor-icon" aria-hidden="true">💚</span>
+      <strong>Voluntarios y donantes</strong>
+      <small>
+        Tiempo, conocimientos y aportes al servicio de los demás.
+      </small>
+    </article>
+
+  </div>
+
+  <p class="project-disclaimer">
+    Estas categorías representan posibles colaboradores de la iniciativa.
+    Los nombres y logotipos de los aliados reales se incorporarán
+    cuando su participación esté confirmada.
+  </p>
+</section>
+
+    <!-- LLAMADO FINAL -->
+    <section class="final-cta">
+      <div>
+        <span class="section-tag">LA SOLIDARIDAD NOS UNE</span>
+        <h2>El mundo cambia cuando<br>decidimos dar el primer paso.</h2>
+        <p>Corre, comparte e invita a más personas a ser parte de esta causa.</p>
+      </div>
+      <a href="#inscripcion" class="btn btn-light">¡Me uno a la carrera! ↗</a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+  <a href="#inicio" class="brand footer-brand">
+    <span class="brand-icon" aria-hidden="true">🤝</span>
+    <span>
+      MANOS <strong>UNIDAS</strong>
+      <small>FUNDACIÓN SOLIDARIA</small>
+    </span>
+  </a>
+
+  <p>Una iniciativa solidaria en Canalete, Córdoba, Colombia.</p>
+
+  <a href="https://wa.me/573045788735"
+     target="_blank"
+     rel="noopener noreferrer">
+    WhatsApp: 304 578 8735
+  </a>
+
+  <div class="footer-bottom">
+    <span>© <span id="currentYear"></span> Fundación Manos Unidas.</span>
+    <span>Proyecto académico de desarrollo web.</span>
+  </div>
+</footer>
+</body>
+</html>
